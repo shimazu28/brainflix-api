@@ -298,5 +298,26 @@
             "timestamp": 1632496261000
         }
     ]
+},
+{
+    "id": "54273455-667a-232f-a53g-11225123cc1e",
+    "title": "Bicycle Fints",
+    "channel": "Anu Wu",
+    "image": "/static/media/Upload-video-preview.313a407c.jpg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nesciunt nemo aut modi error, illo quae ab quisquam sit cum tempore ea perspiciatis nulla ipsa nobis corporis? In, obcaecati cupiditate!",
+    "views": 232,
+    "likes": 5,
+    "duration": "3:31",
+    "video": "https://project-2-api.herokuapp.com/stream",
+    "timestamp": 1632512763000,
+    "comments": [
+        {
+            "id": "1d81337-c1f4-4ec2-bcdc-b545fd6ec258",
+            "name": "Lux Garen",
+            "comment": "I dreamed about riding one around the world. This is the most fantastic thing I’ve seen yet, and I’m watching it ON a bicycle!",
+            "likes": 3,
+            "timestamp": 1632512763000
+        }
+    ]
 }
 ]
