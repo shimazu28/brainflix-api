@@ -7,9 +7,9 @@ const commentsRoute = require('./routes/comments')
 
 const PORT = process.env.PORT || 5050;
 
-app.use (cors());
+app.use (cors({ origin: process.env.ALLOWED_ORIGIN}));
 
-app.use('/', videosRoute)
+app.use('/videos', videosRoute, express.static('public'))
 app.use('/', commentsRoute)
 
 
