@@ -12,9 +12,10 @@ app.use (cors());
 app.use('/', videosRoute)
 app.use('/', commentsRoute)
 
+
 app.use(express.json());
 app.use(express.static('public'));
 
-app.listen(POST, () => {
+app.listen(PORT, () => {
     console.log("Server is running on port", PORT);
 })
