@@ -3,14 +3,18 @@ const app = express();
 const cors = require('cors');
 require('dotenv').config();
 const videosRoute = require('./routes/videos')
-const commentsRoute = require('./routes/comments') 
+const bodyParser = require("body-parser");
+
+
+
+app.use(bodyParser.urlencoded({ extended: false }));
 
 const PORT = process.env.PORT || 5050;
 
-app.use (cors({ origin: process.env.ALLOWED_ORIGIN}));
+app.use(cors({ origin: process.env.ALLOWED_ORIGIN}));
 
-app.use('/videos', videosRoute, express.static('public'))
-app.use('/', commentsRoute)
+app.use('/videos', videosRoute, express.static('public'));
+
 
 
 app.use(express.json());
